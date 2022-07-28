@@ -5,12 +5,9 @@
 PWD=`pwd`
 
 if [ -z $1 ];then
-
-    find $PWD -name '*.cpp' -o -name'*.cc' -o -name '*.hh' -o -name '*.c' -o -name '*.h' -o -name '*.java' > cscope.files
-
+    find $PWD -name '*.cpp' -o -name '*.cc' -o -name '*.hh' -o -name '*.c' -o -name '*.h' -o -name '*.java' > cscope.files
 else
-
-    find $1 -name '*.cpp' -o -name'*.cc' -o -name '*.hh' -o -name '*.c' -o -name '*.h' -o -name '*.java' > cscope.files
+    find $1 -name '*.cpp' -o -name '*.cc' -o -name '*.hh' -o -name '*.c' -o -name '*.h' -o -name '*.java' > cscope.files
 
 fi
 
